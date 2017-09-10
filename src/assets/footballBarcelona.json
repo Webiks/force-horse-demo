@@ -1,0 +1,215 @@
+{
+  "nodes": [
+    {
+      "id": 1,
+      "label": "Eric Abidal"
+    },
+    {
+      "id": 2,
+      "label": "Pedro Rodriguez"
+    },
+    {
+      "id": 3,
+      "label": "Andres Iniesta"
+    },
+    {
+      "id": 4,
+      "label": "Gerard Pique"
+    },
+    {
+      "id": 5,
+      "label": "Valdes"
+    },
+    {
+      "id": 6,
+      "label": "Javier Mascherano"
+    },
+    {
+      "id": 7,
+      "label": "Sergio Busquets"
+    },
+    {
+      "id": 8,
+      "label": "Lionel Messi"
+    },
+    {
+      "id": 9,
+      "label": "Daniel Alves"
+    },
+    {
+      "id": 10,
+      "label": "David Vila"
+    },
+    {
+      "id": 11,
+      "label": "Xavie Hernandes"
+    }
+  ],
+  "links": [
+    {
+      "source": 1,
+      "target": 2,
+      "weight": 2
+    },
+    {
+      "source": 1,
+      "target": 3,
+      "weight": 5
+    },
+    {
+      "source": 1,
+      "target": 11,
+      "weight": 2
+    },
+    {
+      "source": 2,
+      "target": 8,
+      "weight": 1
+    },
+    {
+      "source": 2,
+      "target": 3,
+      "weight": 4
+    },
+    {
+      "source": 2,
+      "target": 1,
+      "weight": 2
+    },
+    {
+      "source": 3,
+      "target": 2,
+      "weight": 5
+    },
+    {
+      "source": 3,
+      "target": 8,
+      "weight": 20
+    },
+    {
+      "source": 3,
+      "target": 11,
+      "weight": 20
+    },
+    {
+      "source": 4,
+      "target": 1,
+      "weight": 1
+    },
+    {
+      "source": 4,
+      "target": 5,
+      "weight": 1
+    },
+    {
+      "source": 4,
+      "target": 11,
+      "weight": 5
+    },
+    {
+      "source": 5,
+      "target": 6,
+      "weight": 2
+    },
+    {
+      "source": 5,
+      "target": 10,
+      "weight": 1
+    },
+    {
+      "source": 5,
+      "target": 7,
+      "weight": 1
+    },
+    {
+      "source": 6,
+      "target": 9,
+      "weight": 4
+    },
+    {
+      "source": 6,
+      "target": 11,
+      "weight": 5
+    },
+    {
+      "source": 7,
+      "target": 11,
+      "weight": 5
+    },
+    {
+      "source": 7,
+      "target": 3,
+      "weight": 5
+    },
+    {
+      "source": 7,
+      "target": 8,
+      "weight": 4
+    },
+    {
+      "source": 8,
+      "target": 11,
+      "weight": 20
+    },
+    {
+      "source": 8,
+      "target": 3,
+      "weight": 20
+    },
+    {
+      "source": 8,
+      "target": 9,
+      "weight": 2
+    },
+    {
+      "source": 9,
+      "target": 10,
+      "weight": 4
+    },
+    {
+      "source": 9,
+      "target": 8,
+      "weight": 6
+    },
+    {
+      "source": 9,
+      "target": 11,
+      "weight": 6
+    },
+    {
+      "source": 10,
+      "target": 8,
+      "weight": 3
+    },
+    {
+      "source": 10,
+      "target": 9,
+      "weight": 1
+    },
+    {
+      "source": 10,
+      "target": 11,
+      "weight": 1
+    },
+    {
+      "source": 11,
+      "target": 8,
+      "weight": 6
+    },
+    {
+      "source": 11,
+      "target": 3,
+      "weight": 20
+    },
+    {
+      "source": 11,
+      "target": 9,
+      "weight": 4
+    },
+    {
+      "source": 11,
+      "target": 6,
+      "weight": 2
+    }
+  ]
+}
