@@ -43,7 +43,7 @@
         <input id="local-file" type="file" (change)="createGraphFromFile($event)"/>
       </div>
     </div>
-    <div id="bottom-info" class="flex-row" *ngIf="instance">
+    <div id="bottom-info" class="flex-row" *ngIf="viewer">
       <div class="flex-column">
         <h3>Nodes</h3>
         <div class="list">

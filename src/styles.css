@@ -1,4 +1,4 @@
-@import '../../force-horse/dist/style.bundle.css';
+@import '~force-horse/dist/style.bundle.css';
 
 body {
   margin: 0;

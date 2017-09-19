@@ -14,7 +14,7 @@ export class AppComponent implements AfterViewInit {
 
   config = DEMO_CONFIG;
 
-  instance: any;
+  viewer: any;
 
   numOfNodes = 11;
 
@@ -30,59 +30,77 @@ export class AppComponent implements AfterViewInit {
   }
 
   ngAfterViewInit() {
-    this.forceHorse.nativeElement.readyEvent.subscribe((instance) => {
-      this.instance = instance;
+    this.forceHorse.nativeElement.readyEvent.subscribe((viewer) => {
+      this.viewer = viewer;
       this.setAmount();
+    });
+
+    this.forceHorse.nativeElement.setConfig({
+      showLabels: true,
+      showNodeWeight: true,
+      showEdgeWeight: true,
+      showFilterButton: true,
+      showLabelsButton: true,
+      showNodeWeightButton: true,
+      showEdgeWeightButton: true,
+      useEdgesWeights: true,
+      forceParameters: {
+        '#charge': -350,
+        '#linkStrength': 1,
+        '#gravity': 0.2,
+        '#linkDistance': 10,
+        '#friction': 0.5
+      }
     });
 
     this.createGraphFromPredefinedFile();
   }
 
-  setOptions(options) {
-    this.forceHorse.nativeElement.setOptions({ data: options });
+  setData(data) {
+    this.forceHorse.nativeElement.setData(data);
   }
 
   setAmount() {
-    if (this.instance && this.instance.nodeDataArray) {
-      this.numOfNodes = this.instance.nodeDataArray.length;
+    if (this.viewer && this.viewer.nodeDataArray) {
+      this.numOfNodes = this.viewer.nodeDataArray.length;
     }
   }
 
   get visibleNodes() {
-    return this.instance.nodeDataArray.filter(n => !n.filtered);
+    return this.viewer.nodeDataArray.filter(n => !n.filtered);
   }
 
   get visibleEdges() {
-    return this.instance.edgeDataArray.filter(e => !e.filtered);
+    return this.viewer.edgeDataArray.filter(e => !e.filtered);
   }
 
   createRandomGraph() {
-    const options = this.isScaleFree ?
+    const data = this.isScaleFree ?
       this.gameData.getRandomScaleFreeGraphData(this.numOfNodes, this.randomizeColors) :
       this.gameData.getRandomData(this.numOfNodes, this.randomizeColors);
 
-    this.setOptions(options);
+    this.setData(data);
   }
 
   createGraphFromPredefinedFile() {
     this.http.get('assets/' + this.predefinedFile + '.json')
       .subscribe(res => {
-        this.setOptions(res);
+        this.setData(res);
       });
   }
 
   createGraphFromFile($event) {
     if ($event.target.files && $event.target.files[0]) {
       const reader = new FileReader();
-      reader.onload = (e) => this.setOptions(JSON.parse((<any>e.currentTarget).result));
+      reader.onload = (e) => this.setData(JSON.parse((<any>e.currentTarget).result));
       reader.readAsText($event.target.files[0]);
     }
   }
 
   onHoverInside(item, on) {
     item.hovered = on;
-    if (this.instance) {
-      this.instance.onHoverOutside(item);
+    if (this.viewer) {
+      this.viewer.onHoverOutside(item);
     }
   }
 
@@ -90,7 +108,7 @@ export class AppComponent implements AfterViewInit {
     const itemType = (item.class === DEMO_CONFIG.CLASS_NODE ? 'node' : 'edge');
 
     if (clearOldSelection) {
-      this.instance[itemType + 'DataArray']
+      this.viewer[itemType + 'DataArray']
         .filter((d) => this.selectedItems[itemType].has(d.id))
         .forEach((d) => d.selected = false);
       this.selectedItems[itemType].clear();
@@ -103,8 +121,8 @@ export class AppComponent implements AfterViewInit {
       this.selectedItems[itemType].delete(item.id);
     }
 
-    if (this.instance) {
-      this.instance.onSelectOutside();
+    if (this.viewer) {
+      this.viewer.onSelectOutside();
     }
   }
 
