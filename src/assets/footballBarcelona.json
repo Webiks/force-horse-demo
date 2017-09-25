@@ -2,47 +2,58 @@
   "nodes": [
     {
       "id": 1,
-      "label": "Eric Abidal"
+      "label": "Eric Abidal",
+      "svg": "<g transform='translate(-12, -12) scale(0.05)'><path d='M293.1,272.8h-74.3C101.3,272.8,6,368.1,6,485.7l0,0h500l0,0C506,368.1,410.7,272.8,293.1,272.8z' /><circle cx='256' cy='140.9' r='114.6'/></g>"
     },
     {
       "id": 2,
-      "label": "Pedro Rodriguez"
+      "label": "Pedro Rodriguez",
+      "svg": "<g transform='translate(-12, -12) scale(0.05)'><path d='M293.1,272.8h-74.3C101.3,272.8,6,368.1,6,485.7l0,0h500l0,0C506,368.1,410.7,272.8,293.1,272.8z' /><circle cx='256' cy='140.9' r='114.6'/></g>"
     },
     {
       "id": 3,
-      "label": "Andres Iniesta"
+      "label": "Andres Iniesta",
+      "svg": "<g transform='translate(-12, -12) scale(0.05)'><path d='M293.1,272.8h-74.3C101.3,272.8,6,368.1,6,485.7l0,0h500l0,0C506,368.1,410.7,272.8,293.1,272.8z' /><circle cx='256' cy='140.9' r='114.6'/></g>"
     },
     {
       "id": 4,
-      "label": "Gerard Pique"
+      "label": "Gerard Pique",
+      "svg": "<g transform='translate(-12, -12) scale(0.05)'><path d='M293.1,272.8h-74.3C101.3,272.8,6,368.1,6,485.7l0,0h500l0,0C506,368.1,410.7,272.8,293.1,272.8z' /><circle cx='256' cy='140.9' r='114.6'/></g>"
     },
     {
       "id": 5,
-      "label": "Valdes"
+      "label": "Valdes",
+      "svg": "<g transform='translate(-12, -12) scale(0.05)'><path d='M293.1,272.8h-74.3C101.3,272.8,6,368.1,6,485.7l0,0h500l0,0C506,368.1,410.7,272.8,293.1,272.8z' /><circle cx='256' cy='140.9' r='114.6'/></g>"
     },
     {
       "id": 6,
-      "label": "Javier Mascherano"
+      "label": "Javier Mascherano",
+      "svg": "<g transform='translate(-12, -12) scale(0.05)'><path d='M293.1,272.8h-74.3C101.3,272.8,6,368.1,6,485.7l0,0h500l0,0C506,368.1,410.7,272.8,293.1,272.8z' /><circle cx='256' cy='140.9' r='114.6'/></g>"
     },
     {
       "id": 7,
-      "label": "Sergio Busquets"
+      "label": "Sergio Busquets",
+      "svg": "<g transform='translate(-12, -12) scale(0.05)'><path d='M293.1,272.8h-74.3C101.3,272.8,6,368.1,6,485.7l0,0h500l0,0C506,368.1,410.7,272.8,293.1,272.8z' /><circle cx='256' cy='140.9' r='114.6'/></g>"
     },
     {
       "id": 8,
-      "label": "Lionel Messi"
+      "label": "Lionel Messi",
+      "svg": "<g transform='translate(-12, -12) scale(0.05)'><path d='M293.1,272.8h-74.3C101.3,272.8,6,368.1,6,485.7l0,0h500l0,0C506,368.1,410.7,272.8,293.1,272.8z' /><circle cx='256' cy='140.9' r='114.6'/></g>"
     },
     {
       "id": 9,
-      "label": "Daniel Alves"
+      "label": "Daniel Alves",
+      "svg": "<g transform='translate(-12, -12) scale(0.05)'><path d='M293.1,272.8h-74.3C101.3,272.8,6,368.1,6,485.7l0,0h500l0,0C506,368.1,410.7,272.8,293.1,272.8z' /><circle cx='256' cy='140.9' r='114.6'/></g>"
     },
     {
       "id": 10,
-      "label": "David Vila"
+      "label": "David Vila",
+      "svg": "<g transform='translate(-12, -12) scale(0.05)'><path d='M293.1,272.8h-74.3C101.3,272.8,6,368.1,6,485.7l0,0h500l0,0C506,368.1,410.7,272.8,293.1,272.8z' /><circle cx='256' cy='140.9' r='114.6'/></g>"
     },
     {
       "id": 11,
-      "label": "Xavie Hernandes"
+      "label": "Xavie Hernandes",
+      "svg": "<g transform='translate(-12, -12) scale(0.05)'><path d='M293.1,272.8h-74.3C101.3,272.8,6,368.1,6,485.7l0,0h500l0,0C506,368.1,410.7,272.8,293.1,272.8z' /><circle cx='256' cy='140.9' r='114.6'/></g>"
     }
   ],
   "links": [

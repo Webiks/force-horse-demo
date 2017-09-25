@@ -22,7 +22,7 @@
     "@angular/platform-browser-dynamic": "^4.4.2",
     "@angular/router": "^4.4.2",
     "core-js": "^2.4.1",
-    "force-horse": "^1.0.6",
+    "force-horse": "^1.0.10",
     "rxjs": "^5.4.2",
     "zone.js": "^0.8.14"
   },
